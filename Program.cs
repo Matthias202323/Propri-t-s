@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 
 
@@ -28,7 +29,8 @@ namespace Propriétés
 
         public House()
         {
-        
+            Doors = new List<Door>();
+            Rooms = new List<Room>();
 
         }
         public List<Room> Rooms {
@@ -61,7 +63,7 @@ namespace Propriétés
         }
         public Room()
         {
-           
+            Doors = new List<Door>();
         }
 
        
